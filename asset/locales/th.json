@@ -2,7 +2,7 @@
   "head": {
     "title": "triple-i"
   },
-  "body": {
+  "div": {
     "multi-language": "ทดสอบ 2 ภาษา",
     "how-to-use": "วิธีใช้งาน",
     "demo": "ทดสอบ"
