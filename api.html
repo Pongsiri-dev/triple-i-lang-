@@ -1,0 +1,2068 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>triple-i</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,500;1,700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+        <link rel="stylesheet" type="text/css" href="asset/css/custom.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="asset/img/logo-triple-i.png" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse display-nav-fix" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item set-nav">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item set-nav">
+                            <a class="nav-link" href="index.html#About">About</a>
+                        </li>
+                        <li class="nav-item set-nav">
+                            <a class="nav-link" href="api.html">API</a>
+                        </li>
+                        <li class="nav-item set-nav">
+                            <a class="nav-link" href="index.html#Report">Web Report</a>
+                        </li>
+                        <li class="nav-item set-nav">
+                            <a class="nav-link" href="index.html#Contact">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="tracking.html" class="btn btn-track">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path
+                                        d="M18.7 10.3813L16.825 6.00625C16.7772 5.89328 16.6971 5.79689 16.5949 5.7291C16.4926 5.6613 16.3727 5.6251 16.25 5.625H14.375V4.375C14.375 4.20924 14.3092 4.05027 14.1919 3.93306C14.0747 3.81585 13.9158 3.75 13.75 3.75H1.875C1.70924 3.75 1.55027 3.81585 1.43306 3.93306C1.31585 4.05027 1.25 4.20924 1.25 4.375V15C1.25 15.1658 1.31585 15.3247 1.43306 15.4419C1.55027 15.5592 1.70924 15.625 1.875 15.625H3.2125C3.35643 16.1546 3.67063 16.6221 4.10662 16.9555C4.54262 17.2888 5.07619 17.4694 5.625 17.4694C6.17381 17.4694 6.70738 17.2888 7.14338 16.9555C7.57937 16.6221 7.89357 16.1546 8.0375 15.625H11.9625C12.1064 16.1546 12.4206 16.6221 12.8566 16.9555C13.2926 17.2888 13.8262 17.4694 14.375 17.4694C14.9238 17.4694 15.4574 17.2888 15.8934 16.9555C16.3294 16.6221 16.6436 16.1546 16.7875 15.625H18.125C18.2908 15.625 18.4497 15.5592 18.5669 15.4419C18.6842 15.3247 18.75 15.1658 18.75 15V10.625C18.7498 10.5412 18.7328 10.4583 18.7 10.3813ZM14.375 6.875H15.8375L17.175 10H14.375V6.875ZM5.625 16.25C5.37777 16.25 5.1361 16.1767 4.93054 16.0393C4.72498 15.902 4.56476 15.7068 4.47015 15.4784C4.37554 15.2499 4.35079 14.9986 4.39902 14.7561C4.44725 14.5137 4.5663 14.2909 4.74112 14.1161C4.91593 13.9413 5.13866 13.8222 5.38114 13.774C5.62361 13.7258 5.87495 13.7505 6.10335 13.8452C6.33176 13.9398 6.52699 14.1 6.66434 14.3055C6.80169 14.5111 6.875 14.7528 6.875 15C6.875 15.3315 6.7433 15.6495 6.50888 15.8839C6.27446 16.1183 5.95652 16.25 5.625 16.25ZM11.9625 14.375H8.0375C7.89357 13.8454 7.57937 13.3779 7.14338 13.0445C6.70738 12.7112 6.17381 12.5306 5.625 12.5306C5.07619 12.5306 4.54262 12.7112 4.10662 13.0445C3.67063 13.3779 3.35643 13.8454 3.2125 14.375H2.5V5H13.125V12.85C12.8404 13.0152 12.5912 13.2349 12.3917 13.4966C12.1922 13.7583 12.0464 14.0568 11.9625 14.375ZM14.375 16.25C14.1278 16.25 13.8861 16.1767 13.6805 16.0393C13.475 15.902 13.3148 15.7068 13.2202 15.4784C13.1255 15.2499 13.1008 14.9986 13.149 14.7561C13.1972 14.5137 13.3163 14.2909 13.4911 14.1161C13.6659 13.9413 13.8887 13.8222 14.1311 13.774C14.3736 13.7258 14.6249 13.7505 14.8534 13.8452C15.0818 13.9398 15.277 14.1 15.4143 14.3055C15.5517 14.5111 15.625 14.7528 15.625 15C15.625 15.3315 15.4933 15.6495 15.2589 15.8839C15.0245 16.1183 14.7065 16.25 14.375 16.25ZM17.5 14.375H16.7875C16.6493 13.8397 16.3375 13.3653 15.901 13.0261C15.4645 12.6868 14.9278 12.5018 14.375 12.5V11.25H17.5V14.375Z"
+                                        fill="#FF4611"
+                                    />
+                                </svg>
+                                Track Your Order
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="login" class="py-4 mt-5 pt-5">
+            <div class="container">
+                <h2 class="mb-3">Login</h2>
+                <div class="accordion accordion-api" id="accordionExample">
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingOne">
+                            <span class="method-post"> POST </span>
+                            <p class="align-self-center mb-0 word-break-all">/auth/login</p>
+                            <button class="accordion-button ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></button>
+                        </div>
+                        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="text-break px-3 py-4">
+                                    <div class="d-flex mb-2">
+                                        <div style="width: 100px;">URL :</div>
+                                        <div>http://XXX.XXX.X.XXX/Similan_center_api_beta/swagger/index.html</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div style="width: 100px;">Test URL :</div>
+                                        <div>https://partner.uat.shopeemobile.com/api/v1/orders/basics</div>
+                                    </div>
+                                </div>
+
+                                <div id="section-example">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Response Example (JSON)</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-3 pb-4">
+                                        <div class="code-panel">
+                                            <code class="text-white">
+                                                <span style="color: white;">{</span><br />
+                                                &nbsp;"username":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"password":
+                                                <span style="color: greenyellow;">"string"</span><br />
+                                                <span style="color: white;">} </span>
+                                            </code>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="section-request">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Request Parameters</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-2 pb-4">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Parameter</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">Data Type</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>username</td>
+                                                    <td>username</td>
+                                                    <td>string</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>password</td>
+                                                    <td>password</td>
+                                                    <td>string</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div id="section-response-code">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Responses</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-2 pb-4">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Code</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">Links</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>200</td>
+                                                    <td>Success</td>
+                                                    <td>No links</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="product" class="py-4">
+        	<div class="container">
+                <h2 class="mb-3">Product</h2>
+                <div class="accordion accordion-api" id="accordionExample1">
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingOne">
+                            <span class="method-post"> POST </span>
+                            <p class="align-self-center mb-0 word-break-all">/api/product/create</p>
+                            <button class="accordion-button ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"></button>
+                        </div>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
+                            <div class="accordion-body">
+                                <div class="text-break px-3 py-4">
+                                    <div class="d-flex mb-2">
+                                        <div style="width: 100px;">URL :</div>
+                                        <div>http://XXX.XXX.X.XXX/Similan_center_api_beta/swagger/index.html</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div style="width: 100px;">Test URL :</div>
+                                        <div>https://partner.uat.shopeemobile.com/api/v1/orders/basics</div>
+                                    </div>
+                                </div>
+
+                                <div id="section-example">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Response Example (JSON)</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-3 pb-4">
+                                        <div class="code-panel">
+                                            <code class="text-white">
+                                                <span style="color: white;">{</span><br />
+                                                &nbsp;"item_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"client":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                 &nbsp;"description":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                 &nbsp;"discount":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                 &nbsp;"unit_cost":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"unit_price":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"product_class":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"status":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                 &nbsp;"grade":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"tolerance":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"bonded":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"alternate":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"gross_wgt":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"multiplier":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"net_weight":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"nesting_factor":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"auto_zoning":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                 &nbsp;"batch":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"lot_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                 &nbsp;"size":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"color":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"item_class":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"dimensions":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"weight_req":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"num_serial":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"serial_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"production_dt":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"expiry_dt":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"shelf_life":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"prealert":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"packing":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"box":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"pallet":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"supplier":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"check3pl":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"uom_3pl_chrg":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"square_item":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"cubic_item":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"item_version":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"reorder":
+                                                <span style="color: greenyellow;">min_pick_face</span><br />
+                                                &nbsp;"prodgrp":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"category":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"min_pick_face":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"max_pick_face":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"packing_uom":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"sap_code_ar":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"sap_code_ap":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"qty_loose":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"max_stock":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"brand":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"sub_category":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"uom_loose":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"ambient_Temperaturn":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"substitute":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"sub_cat1":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"sub_cat2":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"secondary_Risk":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"sub_cat3":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"sub_cat4":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"sub_cat5":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"remarks":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"uom_3pl_hand_out":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"uom_3pl_load":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"uom_3pl_hand_in":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"uom_3pl_unload":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"uom_3pl_process":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"primary_Risk":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"physical_Type_Of_Chemicals":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"uN_Packaging_Code":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"packing_Group":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"danger_Type":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"hazardous_Substances_Type":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"allow_Number":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"li_regis_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"li_imported_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"li_dangerous_name":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"li_qty":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"li_uom":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"li_pass":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"li_area":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"cas_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"ratio_des":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"maker":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"product_zone":
+                                                <span >[&nbsp;</span><br />
+                                                &nbsp; { <br/>
+                                                &nbsp;&nbsp;&nbsp;"client":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"zone":
+                                                <span style="color: greenyellow;">"string"</span><br />
+                                                &nbsp; } <br/>
+                                                 ], <br/>
+                                                &nbsp;"product_attribute":
+                                                <span >[&nbsp;</span><br />
+                                                &nbsp; { <br/>
+                                                &nbsp;&nbsp;&nbsp;"client":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"udf_code":
+                                                <span style="color: greenyellow;">"string,"</span><br />
+                                                &nbsp;&nbsp;&nbsp;"attribute_group":
+                                                <span style="color: greenyellow;">"string,"</span><br />
+                                                &nbsp;&nbsp;&nbsp;"udf_value":
+                                                <span style="color: greenyellow;">"string,"</span><br />
+                                                &nbsp;&nbsp;&nbsp;"maker":
+                                                <span style="color: greenyellow;">"string"</span><br />
+                                                &nbsp; } <br/>
+                                                 ], <br/>
+                                                &nbsp;"product_hazardous":
+                                                <span >[&nbsp;</span><br />
+                                                &nbsp; { <br/>
+                                                &nbsp;&nbsp;&nbsp;"client":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"li_regis_no":
+                                                <span style="color: greenyellow;">"string,"</span><br />
+                                                &nbsp;&nbsp;&nbsp;"li_imported_no":
+                                                <span style="color: greenyellow;">"string,"</span><br />
+                                                &nbsp;&nbsp;&nbsp;"maker":
+                                                <span style="color: greenyellow;">"string"</span><br />
+                                                &nbsp; } <br/>
+                                                 ], <br/>
+                                                &nbsp;"product_UOM":
+                                                <span >[&nbsp;</span><br />
+                                                &nbsp; { <br/>
+                                                &nbsp;&nbsp;&nbsp;"client":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_packing":
+                                                <span style="color: greenyellow;">"string,"</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_qty":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_uom":
+                                                <span style="color: greenyellow;">"string,"</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_height":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_width":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_depth":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_weight":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"uom_sequence":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"maker":
+                                                <span style="color: greenyellow;">"string"</span><br />
+                                                &nbsp; } <br/>
+                                                 ], <br/>
+                                                &nbsp;"product_UN":
+                                                <span >[&nbsp;</span><br />
+                                                &nbsp; { <br/>
+                                                &nbsp;&nbsp;&nbsp;"client":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"un_number":
+                                                <span style="color: greenyellow;">"string"</span><br />
+                                                &nbsp; } <br/>
+                                                 ] <br/>
+                                                <span style="color: white;">} </span>
+                                            </code>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="section-request">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Request Parameters</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-2 pb-4">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Parameter</th>
+                                                    <th scope="col">Data Type</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>item_no</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>client</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>description</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>discount</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>unit_cost</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>unit_price</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>product_class</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>status</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>grade</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>tolerance</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>bonded</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>alternate</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>gross_wgt</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>multiplier</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>net_weight</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>nesting_factor</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>auto_zoning</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>batch</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>lot_no</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>size</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>color</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>item_class</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>dimensions</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>weight_req</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>num_serial</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>serial_no</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>production_dt</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>expiry_dt</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>shelf_life</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>prealert</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>packing</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>box</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>pallet</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>supplier</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>check3pl</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>uom_3pl_chrg</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>square_item</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>cubic_item</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>item_version</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>reorder</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>prodgrp</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>category</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>min_pick_face</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>max_pick_face</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>packing_uom</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>sap_code_ar</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>sap_code_ap</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>qty_loose</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>max_stock</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>brand</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>sub_category</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>uom_loose</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ambient_Temperaturn</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>substitute</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>sub_cat1</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>sub_cat2</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>secondary_Risk</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>sub_cat3</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>sub_cat4</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>sub_cat5</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>remarks</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>uom_3pl_hand_out</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>uom_3pl_load</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>uom_3pl_hand_in</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>uom_3pl_unload</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>uom_3pl_process</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>primary_Risk</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>physical_Type_Of_Chemicals</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>uN_Packaging_Code</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>packing_Group</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>danger_Type</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>hazardous_Substances_Type</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>allow_Number</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>li_regis_no</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>li_imported_no</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>li_dangerous_name</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>li_qty</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>li_uom</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>li_pass</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>li_area</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>cas_no</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ratio_des</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>maker</td>
+                                                    <td>string
+														nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>product_zone</td>
+                                                    <td>[...]</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>product_attribute</td>
+                                                    <td>[...]</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>product_hazardous</td>
+                                                    <td>[...]</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>product_UOM</td>
+                                                    <td>[...]</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>product_UN</td>
+                                                    <td>[...]</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div id="section-response-code">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Responses</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-2 pb-4">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Code</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">Links</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>200</td>
+                                                    <td>Success</td>
+                                                    <td>No links</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        	
+        </section>
+
+
+        <section id="purchaseOrder" class="py-4">
+            <div class="container">
+                <h2 class="mb-3">Purchase Order</h2>
+                <div class="accordion accordion-api" id="accordionExample2">
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingOne">
+                            <span class="method-post"> POST </span>
+                            <p class="align-self-center mb-0 word-break-all">/api/purchaseOrder/sendCreatePurchaseOrder</p>
+                            <button class="accordion-button ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree"></button>
+                        </div>
+                        <div id="collapsethree" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                            <div class="accordion-body">
+                                <div class="text-break px-3 py-4">
+                                    <div class="d-flex mb-2">
+                                        <div style="width: 100px;">URL :</div>
+                                        <div>http://XXX.XXX.X.XXX/Similan_center_api_beta/swagger/index.html</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div style="width: 100px;">Test URL :</div>
+                                        <div></div>
+                                    </div>
+                                </div>
+
+                                <div id="section-example">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Response Example (JSON)</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-3 pb-4">
+                                        <div class="code-panel">
+                                            <code class="text-white">
+                                                <span style="color: white;">{</span><br />
+                                                &nbsp;"client":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"order_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"order_type":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"status":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"reference":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"supplier":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"supplier_name":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"street":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"bldg":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"town":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"postcode":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"contact":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"phone":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"fax":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"maker":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"country":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"street3":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"state":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"payment_term":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"credit":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"vat":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"remarks":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"discount":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"discount_type":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"pr_ref":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"transport_mode":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"eta":
+                                                <span style="color: greenyellow;">"2020-11-03T04:05:42.249Z",</span><br />
+                                                &nbsp;"ship_to":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"ship_instruction":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"shipment_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"hawb":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"container":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"remarks1":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"currency":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"received_by":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"seal_number":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"vessel":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"origin_country":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"customs_import_entry":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"truckplate":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"typeoftruck":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"driver":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"licenscetype":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"truckingservices":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"invoice":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                 &nbsp;"podetails":
+                                                <span style="color: greenyellow;">[</span><br />
+                                                 &nbsp;&nbsp;&nbsp;{ <br/>
+                                                &nbsp;&nbsp;&nbsp;"client":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"order_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"line_no":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"supplier":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"grade":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"loose":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                 &nbsp;&nbsp;&nbsp;"loose_uom":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"owner":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"lot":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"batch":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                 &nbsp;&nbsp;&nbsp;"item_size":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                 &nbsp;&nbsp;&nbsp;"item_color":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                 &nbsp;&nbsp;&nbsp;"item_class":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                 &nbsp;&nbsp;&nbsp;"line_remark":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"unit_price":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"udf1":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"discount":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"discount_type":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"maker":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"udf2":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"pr_line":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                <span style="color: white;"> &nbsp;&nbsp;&nbsp;} </span><br/>
+                                                <span style="color: white;"> &nbsp;] </span><br/>
+                                                <span style="color: white;">} </span>
+
+                                            </code>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="section-request">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Request Parameters</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-2 pb-4">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Parameter</th>
+                                                    <th scope="col">Data Type</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>client</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>order_no</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>order_type</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>status</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>reference</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>supplier</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>supplier_name</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>street</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>bldg</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>town</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>postcode</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>contact</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>phone</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>fax</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>maker</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>country</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>street3</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>state</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>payment_term</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>credit</td>
+                                                    <td>number($double)</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>discount_type</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>pr_ref</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>transport_mode</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>eta</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ship_to</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ship_instruction</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>shipment_no</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>hawb</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>container</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>remarks1</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>currency</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>received_by</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>seal_number</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>vessel</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>origin_country</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>customs_import_entry</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>truckplate</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>typeoftruck</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>driver</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>licenscetype</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>truckingservices</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>invoice</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>podetails</td>
+                                                    <td>[...]</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div id="section-response-code">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Responses</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-2 pb-4">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Code</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">Links</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>200</td>
+                                                    <td>Success</td>
+                                                    <td>No links</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="salesorder" class="py-5">
+            <div class="container">
+                <h2 class="mb-3">Salesorder</h2>
+                <div class="accordion accordion-api" id="accordionExample4">
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingOne">
+                            <span class="method-post"> POST </span>
+                            <p class="align-self-center mb-0 word-break-all">/api/salesorder/sendCreateSalesOrder</p>
+                            <button class="accordion-button ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour"></button>
+                        </div>
+                        <div id="collapsefour" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample4">
+                            <div class="accordion-body">
+                                <div class="text-break px-3 py-4">
+                                    <div class="d-flex mb-2">
+                                        <div style="width: 100px;">URL :</div>
+                                        <div>http://XXX.XXX.X.XXX/Similan_center_api_beta/swagger/index.html</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div style="width: 100px;">Test URL :</div>
+                                        <div></div>
+                                    </div>
+                                </div>
+
+                                <div id="section-example">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Response Example (JSON)</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-3 pb-4">
+                                        <div class="code-panel">
+                                            <code class="text-white">
+                                                <span style="color: white;">{</span><br />
+                                                &nbsp;"client":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"so_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"shipment_code":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"order_date":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"customer_code":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"customer_name":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"reference_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"remarks":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"delivery_date":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"transport_cost":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"service_fee":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"contact_person":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"address1":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"address2":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"street":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"sub_district":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"district":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"province":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"country":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"post_code":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"phone":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"trucking_service":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"tracking_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"cod":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"seq":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"whse_source":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"sodetails":
+                                                <span style="color: white;">[</span><br />
+                                                <span style="color: white;">&nbsp;{ </span><br />
+                                                &nbsp;&nbsp;&nbsp;"receipt_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"line_no":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"uom":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"qty":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"unit_price":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"grade":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"discount":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"discount_type":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                <span style="color: white;">&nbsp;&nbsp;}</span><br />
+                                                <span style="color: white;">&nbsp;],</span><br />
+                                                &nbsp;"username":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"password":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"sendby":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                <span style="color: white;">} </span>
+                                            </code>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="section-request">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Request Parameters</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-2 pb-4">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Parameter</th>
+                                                    <th scope="col">Data Type</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>client</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>so_no</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>shipment_code</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>order_date</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>customer_code</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>customer_name</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>reference_no</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>remarks</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>delivery_date</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>transport_cost</td>
+                                                    <td>number($double)</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>service_fee</td>
+                                                    <td>number($double)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>contact_person</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>address1</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>address2</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>street</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>sub_district</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>district</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>province</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>country</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>post_code</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>phone</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>trucking_service</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>tracking_no</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>cod</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>seq</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>whse_source</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>sodetails</td>
+                                                    <td>[...]</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>username</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>password</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>sendby</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div id="section-response-code">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Responses</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-2 pb-4">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Code</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">Links</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>200</td>
+                                                    <td>Success</td>
+                                                    <td>No links</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section id="return" class="py-4">
+            <div class="container">
+                <h2 class="mb-3">Return</h2>
+                <div class="accordion accordion-api" id="accordionExample5">
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headingOne">
+                            <span class="method-post"> POST </span>
+                            <p class="align-self-center mb-0 word-break-all">/สร้างเอกสารใบส่งคืนสินค้ากลับคลังสินค้า (Return)</p>
+                            <button class="accordion-button ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive"></button>
+                        </div>
+                        <div id="collapsefive" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample5">
+                            <div class="accordion-body">
+                                <div class="text-break px-3 py-4">
+                                    <div class="d-flex mb-2">
+                                        <div style="width: 100px;">URL :</div>
+                                        <div>http://XXX.XXX.X.XXX/Similan_center_api_beta/swagger/index.html</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div style="width: 100px;">Test URL :</div>
+                                        <div></div>
+                                    </div>
+                                </div>
+
+                                <div id="section-example">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Response Example (JSON)</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-3 pb-4">
+                                        <div class="code-panel">
+                                            <code class="text-white">
+                                                <span style="color: white;">{</span><br />
+                                                &nbsp;"client":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"receipt_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"status":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"receipt_station":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"warehouse":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"putaway_operator":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"receipt_type":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"receipt_date":
+                                                <span style="color: greenyellow;">"2020-11-03T04:45:19.274Z",</span><br />
+                                                &nbsp;"receipt_ref_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"client_po_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"client_so_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"shipment_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"ship_mode":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"supplier":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"vessel":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"container":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"awb_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"customer":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"eta":
+                                                <span style="color: greenyellow;">"2020-11-03T04:45:19.274Z",</span><br />
+                                                &nbsp;"custom_type":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"remarks":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"maker":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"vat":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"discount":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;"discount_type":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"asn_flag":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"received_time":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"seal_number":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"origin_country":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"customs_import_entry":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"truckingservices":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"invoice":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"payment":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"ship_instruction":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"ship_to":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"customer_po_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"vender_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"meterials":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"personner":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"nc_remarks":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"qty_box":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"qty_pallet":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"unload_flag":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;"details":
+                                                <span style="color: white;">[</span><br />
+                                                <span style="color: white;">&nbsp;&nbsp;{</span><br />
+                                                &nbsp;&nbsp;&nbsp;"client":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"receipt_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"receipt_date":
+                                                <span style="color: greenyellow;">"2020-11-03T04:45:19.274Z",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"line_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"pallet_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"uom":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"qty":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"grade":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"client_po_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"batch_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"lot_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"owner":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"expiry_date":
+                                                <span style="color: greenyellow;">"2020-11-03T04:45:19.274Z",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"prod_Date":
+                                                <span style="color: greenyellow;">"2020-11-03T04:45:19.274Z",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_color":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"item_class":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"width":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"depth":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"height":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"weight":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"status":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"location":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"maker":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"remarks_line":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"udf1":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"udf2":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"udf3":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"udf4":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"udf5":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"line_asn":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"line_purchase":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"asn_check":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"on_pallet":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"unit_cost":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"discount":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"discount_type":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"unit_price":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"client_so_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                &nbsp;&nbsp;&nbsp;"client_so_line":
+                                                <span style="color: greenyellow;">0,</span><br />
+                                                &nbsp;&nbsp;&nbsp;"client_so_no":
+                                                <span style="color: greenyellow;">"string",</span><br />
+                                                <span style="color: white;">&nbsp;&nbsp;} </span><br />
+                                                <span style="color: white;">&nbsp;] </span><br />
+                                                <span style="color: white;">} </span>
+                                            </code>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="section-request">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Request Parameters</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-2 pb-4">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Parameter</th>
+                                                    <th scope="col">Data Type</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>client</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>receipt_no</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>status</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>receipt_station</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>warehouse</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>putaway_operator</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>receipt_type</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>receipt_date</td>
+                                                    <td>string($date-time)nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>receipt_ref_no</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>client_po_no</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>client_so_no</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>shipment_no</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ship_mode</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>supplier</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>vessel</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>container</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>awb_no</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>customer</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>eta</td>
+                                                    <td>eta string($date-time)nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>custom_type</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>remarks</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>maker</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>vat</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>vat</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>discount</td>
+                                                    <td>integer($int32)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>discount_type</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>asn_flag</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>received_time</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>seal_number</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>origin_country</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>customs_import_entry</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>truckingservices</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>invoice</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>payment</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ship_instruction</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>ship_to</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>customer_po_no</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>vender_no</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>meterials</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>personner</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>nc_remarks</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>qty_box</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>qty_pallet</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>unload_flag</td>
+                                                    <td>string nullable: true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>details</td>
+                                                    <td>[...]</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div id="section-response-code">
+                                    <div class="api-section-title">
+                                        <h6 class="mb-0">Responses</h6>
+                                    </div>
+                                    <div class="api-section-body px-3 pt-2 pb-4">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Code</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">Links</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>200</td>
+                                                    <td>Success</td>
+                                                    <td>No links</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="py-5 bg-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="asset/img/logo-triple-i-w.png" class="w-25 mb-4" />
+                        <h3 class="txt-org">The right solution, The right partner.</h3>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-6 text-white">
+                                <h5>Location</h5>
+                                <div class="d-flex align-items-start">
+                                    <i class="bi bi-geo-alt-fill me-2"></i>
+                                    <p>628 Triple i Building, 6th Floor, Soi Klab Chom, Nonsee Road, Chongnonsee, Yannawa, Bangkok 10120</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 text-white">
+                                <h5>Contact Us</h5>
+                                <div class="d-flex align-items-start">
+                                    <i class="bi bi-envelope-fill me-2"></i>
+                                    <p>info@iii-supplychain.com.com</p>
+                                </div>
+                                <div class="d-flex align-items-start">
+                                    <i class="bi bi-telephone-fill me-2"></i>
+                                    <p>Tel: +66 2681-3722-5</p>
+                                </div>
+                                <div class="d-flex align-items-start">
+                                    <img class="me-1 icon-fax" src="asset/img/icons/fa_fax.svg" />
+                                    <p>Fax: +66 2681-3110</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+</html>

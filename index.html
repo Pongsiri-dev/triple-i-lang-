@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description" content="Logistics company providing innovative and customized solutions through Replenishment,Warehousing & Transport Development in order to achieve Logistics Excellence for our value clients. ">
+	<meta name="keywords" content="Triple i SupplyChain Co., Ltd.">
+	<meta property="og:image" content="asset/img/logo-triple-i.png"/>
+	<title>triple-i</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,500;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/custom.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light ">
+	  <div class="container ">
+	    <a class="navbar-brand" href="index.html"><img src="asset/img/logo-triple-i.png" alt="logo triple i"></a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse display-nav-fix" id="navbarNav">
+	      <ul class="navbar-nav">
+	        <li class="nav-item set-nav">
+	          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+	        </li>
+	        <li class="nav-item set-nav">
+	          <a class="nav-link" href="#About">About</a>
+	        </li>
+	        <li class="nav-item set-nav">
+	          <a class="nav-link" href="api.html">API</a>
+	        </li>
+	        <li class="nav-item set-nav">
+	          <a class="nav-link" href="#Report">Web Report</a>
+	        </li>
+	        <li class="nav-item set-nav">
+	          <a class="nav-link" href="#Contact">Contact Us</a>
+	        </li>
+	        <li>
+
+	        	<a href="tracking.html" class="btn btn-track"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+					<path d="M18.7 10.3813L16.825 6.00625C16.7772 5.89328 16.6971 5.79689 16.5949 5.7291C16.4926 5.6613 16.3727 5.6251 16.25 5.625H14.375V4.375C14.375 4.20924 14.3092 4.05027 14.1919 3.93306C14.0747 3.81585 13.9158 3.75 13.75 3.75H1.875C1.70924 3.75 1.55027 3.81585 1.43306 3.93306C1.31585 4.05027 1.25 4.20924 1.25 4.375V15C1.25 15.1658 1.31585 15.3247 1.43306 15.4419C1.55027 15.5592 1.70924 15.625 1.875 15.625H3.2125C3.35643 16.1546 3.67063 16.6221 4.10662 16.9555C4.54262 17.2888 5.07619 17.4694 5.625 17.4694C6.17381 17.4694 6.70738 17.2888 7.14338 16.9555C7.57937 16.6221 7.89357 16.1546 8.0375 15.625H11.9625C12.1064 16.1546 12.4206 16.6221 12.8566 16.9555C13.2926 17.2888 13.8262 17.4694 14.375 17.4694C14.9238 17.4694 15.4574 17.2888 15.8934 16.9555C16.3294 16.6221 16.6436 16.1546 16.7875 15.625H18.125C18.2908 15.625 18.4497 15.5592 18.5669 15.4419C18.6842 15.3247 18.75 15.1658 18.75 15V10.625C18.7498 10.5412 18.7328 10.4583 18.7 10.3813ZM14.375 6.875H15.8375L17.175 10H14.375V6.875ZM5.625 16.25C5.37777 16.25 5.1361 16.1767 4.93054 16.0393C4.72498 15.902 4.56476 15.7068 4.47015 15.4784C4.37554 15.2499 4.35079 14.9986 4.39902 14.7561C4.44725 14.5137 4.5663 14.2909 4.74112 14.1161C4.91593 13.9413 5.13866 13.8222 5.38114 13.774C5.62361 13.7258 5.87495 13.7505 6.10335 13.8452C6.33176 13.9398 6.52699 14.1 6.66434 14.3055C6.80169 14.5111 6.875 14.7528 6.875 15C6.875 15.3315 6.7433 15.6495 6.50888 15.8839C6.27446 16.1183 5.95652 16.25 5.625 16.25ZM11.9625 14.375H8.0375C7.89357 13.8454 7.57937 13.3779 7.14338 13.0445C6.70738 12.7112 6.17381 12.5306 5.625 12.5306C5.07619 12.5306 4.54262 12.7112 4.10662 13.0445C3.67063 13.3779 3.35643 13.8454 3.2125 14.375H2.5V5H13.125V12.85C12.8404 13.0152 12.5912 13.2349 12.3917 13.4966C12.1922 13.7583 12.0464 14.0568 11.9625 14.375ZM14.375 16.25C14.1278 16.25 13.8861 16.1767 13.6805 16.0393C13.475 15.902 13.3148 15.7068 13.2202 15.4784C13.1255 15.2499 13.1008 14.9986 13.149 14.7561C13.1972 14.5137 13.3163 14.2909 13.4911 14.1161C13.6659 13.9413 13.8887 13.8222 14.1311 13.774C14.3736 13.7258 14.6249 13.7505 14.8534 13.8452C15.0818 13.9398 15.277 14.1 15.4143 14.3055C15.5517 14.5111 15.625 14.7528 15.625 15C15.625 15.3315 15.4933 15.6495 15.2589 15.8839C15.0245 16.1183 14.7065 16.25 14.375 16.25ZM17.5 14.375H16.7875C16.6493 13.8397 16.3375 13.3653 15.901 13.0261C15.4645 12.6868 14.9278 12.5018 14.375 12.5V11.25H17.5V14.375Z" fill="#FF4611"/>
+					</svg> Track Your Order</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	
+
+	<section class="mt-5 mt-lg-0 pt-5">
+		<div class="mt-5 mt-lg-0 pt-5">
+			<button class="btn btn-light" onclick="setLanguage('th')">th</button>
+			<button class="btn btn-light" onclick="setLanguage('en')">English</button>
+		</div>
+
+		<div class="mt-5 mt-lg-0 pt-5">
+			<h1 key="multi-language">jQuery Multi Language Plugin Example</h1>
+			<h3 key="how-to-use">How to use:</h3>
+			<h3 key="demo">Demo:</h3>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 px-0 position-relative">
+					<div class="">
+						<img alt="background" src="asset/img/bg-section.png" class="img-fluid w-100 bg-img-height-sm">
+					</div>
+					<div class="position-50 ">
+							<span class="text-white">Triple i SupplyChain Co., Ltd.</span>
+							<h1 class="text-white">Providing Warehousing and <br/>Transport Services</h1>
+							<button class="btn btn-banner-org mx-2">Our Service</button>
+							<button class="btn btn-banner-opacity mx-2">Contact Us</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<img alt="logistics company" class="img-fluid w-100" src="asset/img/managers-visiting-storage-center-discussing-about-distribution-goals-year 1.jpg">
+				</div>
+				<div class="col-lg-7 mt-lg-0 mt-4">
+					<h1 class="txt-blue">WAREHOUSE AND INVENTORY
+					MANAGEMENT SERVICES</h1>
+					<p class="txt-blue"><span class="txt-org">Triple i SupplyChain Co., Ltd. (TSC)</span> is the Logistics company
+					providing innovative and customized solutions through Replenishment,
+					Warehousing & Transport Development in order to achieve Logistics Excellence
+					for our value clients. </p>
+					<div class="txt-blue">
+						<p>
+							Our Logistics Services
+						</p>
+						<ul>
+							<li>One-Stop Service for International Logistics Shipments</li>
+							<li>Warehousing Management</li>
+						</ul>
+						<p>
+							We have warehouse and distribution center on Bangna Trad Km. 19
+						</p>
+						<ul>
+							<li>Distribution & Transport Management</li>
+							<li>Vendor Managed Inventory (VMI)</li>
+							<li>E-fulfillment</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="About" class="bg-section">
+		<div class="container">
+			<div class="row py-5">
+				<div class="col-lg-6">
+					<img src="asset/img/Group01.png" class="icon-sm-w" alt="img triple i">
+					<div>
+						<h1 class="txt-blue">WHY TRIPLE i</h1>
+						<p class="txt-blue"> 
+				             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+						</p>
+						<p class="txt-blue">
+							 printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<img  src="asset/img/DSC06396 1.jpg" class="img-fluid w-100">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-sectionV1 py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<img  src="asset/img/Group02.png" class="icon-sm-w" alt="img triple i">
+					<h1 class="txt-blue mb-lg-5 pb-lg-5 mb-2 pb-2">WHAT WE DO</h1>
+				</div>
+				<div class="col-lg-3 position-relative my-lg-0 my-5">
+					
+					<div class="box-W-service shadowV1">
+						<div class="text-center mb-4">
+							<img alt="i-fulfillment-Logo"  class="w-75"  src="asset/img/i-fulfillment-Logo-Guideline-1.png" >
+						</div>
+						<!-- <h3 class="txt-blue text-center">iFulfillment</h3> -->
+						<ul class="txt-blue fix-text">
+							<li>
+								e-Commerce and e-Fulfillment Solution
+							</li>
+							<li>
+								Bar-code based IT system 
+							</li>
+							<li>
+								Storage and Inventory Management 
+							</li>
+							<li>
+								Picking and Packing 
+							</li>
+							<li>
+								Dispatching and Shipping
+							</li>
+							<li>
+								Cash-on-Delivery (COD) Services 
+							</li>
+						</ul>
+						<p class="text-center txt-org mb-0 cursor" data-bs-toggle="modal" data-bs-target="#iFulfillment"><u>Read more</u></p>
+					</div>
+				</div>
+				<div class="col-lg-3 position-relative my-lg-0 my-5">
+					
+					<div class="box-W-service shadowV1">
+						<div class="text-center mb-4">
+							<img alt="i-delivery-Logo"  src="asset/img/i-delivery-Logo-Guideline-1.png"  class="w-75">
+						</div>
+						<!-- <h3 class="txt-blue text-center">iDelivery</h3> -->
+						<ul class="txt-blue fix-text">
+							<li>
+								Bangkok and Nationwide On-time Delivery 
+							</li>
+							<li>
+								Same-day and Next-day Delivery Services 
+							</li>
+							<li>
+								Dedicated Fleet and Consolidation
+							</li>
+							<li>
+								Proof-of-Delivery (POD) Management
+							</li>
+						</ul>
+						<p class="text-center txt-org mb-0 cursor"  data-bs-toggle="modal" data-bs-target="#iDelivery"> <u>Read more</u></p>
+					</div>
+				</div>
+				<div class="col-lg-3 position-relative my-lg-0 my-5">
+					
+					<div class="box-W-service shadowV1">
+						<div class="text-center mb-4">
+							<img alt="i-project-Logo" src="asset/img/i-project-Logo-Guideline-1.png"  class="w-75">
+						</div>
+						<!-- <h3 class="txt-blue text-center">iProject</h3> -->
+						<ul class="txt-blue fix-text">
+							<li>
+								Built-in Interface/Electronic Data Interface (EDI) with any ERP systems 
+							</li>
+							<li>
+								Customizable Operational & Performance Report 
+							</li>
+							<li>
+								Web-based Report for 7 days/24 hours Visibility 
+							</li>
+						</ul>
+						<p class="text-center txt-org mb-0 cursor" data-bs-toggle="modal" data-bs-target="#iProject"><u>Read more</u></p>
+					</div>
+				</div>
+				<div class="col-lg-3 position-relative my-lg-0 my-5">
+					
+					<div class="box-W-service shadowV1">
+						<div class="text-center mb-4">
+							<img alt="i-Commerce-Logo" src="asset/img/i-Commerce-Logo-Guideline-1.png" class="w-75">
+						</div>
+						<!-- <h3 class="txt-blue text-center">iCommerce</h3> -->
+						<ul class="txt-blue fix-text">
+							<li>
+								Rack, Bin, Pick-face Storage Management
+							</li>
+							<li>
+								Ambient and Air-conditioned Storage 
+							</li>
+							<li>
+								Palletized, Carton/Case, Piece based Picking
+							</li>
+							<li>
+								Packaging Management and Control
+							</li>
+						</ul>
+						<p class="text-center txt-org mb-0" data-bs-toggle="modal" data-bs-target="#iCommerce"><u>Read more</u></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-sectionV2 py-5">
+		<div class="container">
+			<div class="row d-flex align-items-center" >
+				<div class="col-lg-6 my-lg-3 my-5">
+					<img src="asset/img/Group-28.png" class="icon-sm-w" alt="img triple i">
+					<h1 class="txt-blue ">CORPORATE VALUES</h1>
+					<p class="txt-blue ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, ac tincidunt adipiscing in elementum amet pulvinar tristique. Sed tellus quis feugiat cursus turpis lacus velit aliquam.</p>
+				</div>
+				<div class="col-lg-6 my-lg-3 my-5 ">
+					<div class=" box-W-serviceV2 shadowV1 display-VALUES-flex">
+						<div class="col-lg-4 col-12 p-4"> 
+							<img src="asset/img/DSC06911.png" class="w-100" alt="img triple i">
+						</div>
+						<div class="col-lg-8 col-12 p-lg-0 p-4">
+							<h3 class="txt-blue ">Integration</h3>
+							<p class="txt-blue ">We believe that the power of collaboration and synergy of potentialities among all intra and inter- organizational elements are driven to build the corporate competitive strengths and core competencies towards mutual successes and sustainable growth.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 my-lg-3 my-5 ">
+					<div class=" box-W-serviceV2 shadowV1 display-VALUES-flex" >
+						<div class="col-lg-4 col-12 p-4"> 
+							<img src="asset/img/172.png" class="w-100" alt="img triple i">
+						</div>
+						<div class="col-lg-8 col-12 p-lg-0 p-4">
+							<h3 class="txt-blue ">Innovation</h3>
+							<p class="txt-blue ">We believe that the power of thoughts, endless learning and creativities are initiated to enhance the exceptional standards of service levels with continuous improvements towards being the innovative organization that provides the excellent services with genuine corporate differentiation.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 my-lg-3 my-5 ">
+					<div class=" box-W-serviceV2 shadowV1 display-VALUES-flex">
+						<div class="col-lg-4 col-12 p-4"> 
+							<img src="asset/img/two-confident.png" class="w-100" alt="img triple i">
+						</div>
+						<div class="col-lg-8 col-12 p-lg-0 p-4">
+							<h3 class="txt-blue ">Intimacy</h3>
+							<p class="txt-blue ">We believe that the power of thoughts, endless learning and creativities are initiated to enhance the exceptional standards of service levels with continuous improvements towards being the innovative organization that provides the excellent services with genuine corporate differentiation.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-sectionV1 py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<img src="asset/img/Group-30.png" class="icon-sm-w" alt="img triple i">
+					<h1 class="txt-blue">SAFETY AND SECURITY</h1>
+				</div>
+				<div class="col-lg-6">
+					<img src="asset/img/mitchell-luo-wXs0mncHyfI-unsplash 1.jpg" class="w-100" alt="img triple i">
+				</div>
+				<div class="col-lg-6">
+					<p>
+					  <a class="fix-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+					    Safety and Security <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+						  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+						</svg>
+					  </a>
+					</p>
+					<div class="collapse show" id="collapseExample">
+					  <div class=" card-body">
+					    <p>Safety and Security Excellence is the Topmost Piority</p>
+					    <p>Triple i SupplyChain Co., Ltd. is highly commited in providing the end-to-end supply chain service with high level of Safety and Security Excellence. In order to protect out employees, customers, suppliers, ans all stakeholders, the company’s management and staff shall continously improve the knowledge and skills as well as the business and IT processes to eliminate all type of operational risks, accidents, injuries, losses and damages to people, Properties, facilities, public and environment.</p>
+					    <p>According to corporate philosophy, Triple i SupplyChain Co., Ltd. shall always conduct the business in the RIGHT and Responsible maner.</p>
+					  </div>
+					</div>
+
+					<p>
+					  <a class="fix-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+					   These includes the continuous improvement on following practices: <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+						  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+						</svg>
+					  </a>
+					</p>
+					<div class="collapse" id="collapseExample1">
+					  <div class=" card-body">
+					    <p>Safety and Security Excellence is the Topmost Piority</p>
+					    <p>Triple i SupplyChain Co., Ltd. is highly commited in providing the end-to-end supply chain service with high level of Safety and Security Excellence. In order to protect out employees, customers, suppliers, ans all stakeholders, the company’s management and staff shall continously improve the knowledge and skills as well as the business and IT processes to eliminate all type of operational risks, accidents, injuries, losses and damages to people, Properties, facilities, public and environment.</p>
+					    <p>According to corporate philosophy, Triple i SupplyChain Co., Ltd. shall always conduct the business in the RIGHT and Responsible maner.</p>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-5 bg-blue">
+		<div class="container">
+			<div class="row text-center ">
+				<div class="col-lg-12 ">
+					<img src="asset/img/Group-31.png" class="icon-sm-w" alt="img triple i">
+					<h1 class="text-white">TRACKING YOUR ORDER</h1>
+					<div class="d-flex justify-content-center my-5">
+						<input type="email" class="form-control w-25  form-control-lg" id="exampleFormControlInput1" placeholder="Enter your order no">
+					</div>
+					<div class="d-flex justify-content-center">
+						<a href="tracking.html"  class="btn btn-banner-org d-flex align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi mx-2 bi-search" viewBox="0 0 16 16">
+						  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+						</svg>Check</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-sectionV1 py-5">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-lg-6 ">
+					<div class="row box-api-frame">
+						<div class="col-lg-6 mb-4">
+							<a href="api.html">
+								<div class="d-flex align-items-center box-api">
+									<img class="mx-2 w-20" src="asset/img/icons/api_login.png" alt="api login">
+									<h5 class=" mb-0">Login</h5>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-6 mb-4">
+							<a href="api.html">
+								<div class="d-flex align-items-center box-api">
+									<img class="mx-2 w-20" src="asset/img/icons/api_product.png" alt="api product">
+									<h5 class=" mb-0">Product</h5>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-6 mb-4">
+							<a href="api.html">
+								<div class="d-flex align-items-center box-api">
+									<img class="mx-2 w-20" src="asset/img/icons/api_purchaseOrder.png" alt="api purchaseOrder">
+									<h5 class=" mb-0">Purchase Order</h5>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-6 mb-4">
+							<a href="api.html">
+								<div class="d-flex align-items-center box-api">
+									<img class="mx-2 w-20" src="asset/img/icons/api_saleOrder.png" alt="api saleOrder">
+									<h5 class=" mb-0">Sale Order</h5>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-6 ">
+							<a href="api.html">
+								<div class="d-flex align-items-center box-api">
+									<img class="mx-2 w-20" src="asset/img/icons/api_returnDocuments.png" alt="api returnDocuments">
+									<h5 class=" mb-0">Return Documents</h5>
+								</div>
+							</a>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-lg-6 ps-lg-5 ps-0">
+					<img src="asset/img/Group-33.png" class="icon-sm-w" alt="img triple i">
+					<h1 class="txt-blue">API MANAGEMENT <br/>
+					 PLATFORM</h1>
+					 <p class="txt-blue">In order to connect your business systems in shipping audits, we provide a sandbox environment for you to test before going live. when satisfied with the test Switch to a real URL</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="Report" class="bg-sectionV1 position-relative">
+		<div class="container-fluid ">
+			<div class="row">
+				<div class="col-12 px-0">
+					<div class="">
+						<img alt="" src="asset/img/bg-section-web.png" class="img-fluid w-100 fix-web-api" alt="img triple i">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container position-box-report">
+			<div class="row d-flex align-items-center">
+				<div class="col-lg-6 py-2 py-lg-0">
+					<div class="box-web-report">
+						<img alt="" src="asset/img/Group-34.png" class="icon-sm-w" alt="img triple i">
+						<h1 class="text-white">WEB REPORT</h1>
+						<div class="input-group mb-3">
+						  <span class="input-group-text" id="basic-addon1">
+						  	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+							  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+							</svg>
+						  </span>
+						  <input type="text" class="form-control set-input" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+						</div>
+						<div class="input-group mb-3">
+						  <span class="input-group-text" id="basic-Password">
+						  	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+							  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+							</svg>
+						  </span>
+						  <input type="Password" class="form-control set-input" placeholder="Password" aria-label="Password" aria-describedby="basic-Password">
+						</div>
+						<div class="text-center">
+							<a href="http://wms.iii-supplychain.com/SIMILANWMS/Login.aspx" class="btn btn-banner-org">Login</a>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-lg-6 py-2 py-lg-0">
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/pzEG69tDZ0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="Contact" class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center ">
+					<img src="asset/img/Group-35.png" class="icon-sm-w" alt="img triple i">
+					<h1 class="txt-blue">GET IN TOUCH</h1>
+				</div>
+			</div>
+			<div class="row my-5 py-5">
+				<div class="col-lg-6">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+					  <li class="nav-item" role="presentation">
+					    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"> <i class="bi bi-map mx-2"></i> Head Office</button>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="mx-2 bi bi-map"></i>Warehouse Bangna KM.19</button>
+					  </li>
+					</ul>
+					<div class="tab-content my-3" id="myTabContent">
+					  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+					  	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.4984568486557!2d100.54257456489971!3d13.688233290388649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2a1e278a7803b%3A0x63ba3105e93be66a!2sTriple%20i%20building!5e0!3m2!1sth!2sth!4v1646754689041!5m2!1sth!2sth" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					  	<p class="txt-blue"><span><i class="bi bi-geo-alt-fill me-2 txt-blue"></i></span>
+					  		628 Triple i Building, 6th Floor,
+							Soi Klab Chom, Nonsee Road,
+							Chongnonsee, Yannawa, Bangkok 10120</p>
+					  </div>
+					  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+					  	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.946454251858!2d100.76217919999999!3d13.600082599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d5c8f0f1d6cd7%3A0x7c14fafd77b0dc44!2sTriple%20i%20Supplychain%20Co.%2C%20Ltd.-%20Warehouse%20Bangna-Trad%20Km.19!5e0!3m2!1sth!2sth!4v1646756223454!5m2!1sth!2sth" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					  	<p class="txt-blue"><span><i class="bi bi-geo-alt-fill me-2 txt-blue"></i></span>Triple i Supplychain Co., Ltd.- Warehouse Bangna-Trad Km.19</p>
+					  </div>
+					</div>
+
+				</div>
+				<div class="col-lg-6">
+					<div class="contact-set-box">
+						<h2 class="txt-blue">Send us message</h2>
+						<div class="mb-4">
+						  <input type="text" class="form-control set-input" id="name1" placeholder="Enter your name">
+						</div>
+						<div class="mb-4">
+						  <input type="email" class="form-control set-input" id="mail1" placeholder="Enter your email">
+						</div>
+						<div class="mb-4">
+						  <input type="email" class="form-control set-input" id="mail1" placeholder="Enter your phone number">
+						</div>
+						<div class="mb-4">
+							<textarea class="form-control " id="exampleFormControlTextarea1" rows="5"></textarea>
+						</div>
+						<div class="d-flex justify-content-end">
+							<button class="btn btn-banner-org"><i class="bi bi-send"></i> Submit</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+<footer class="py-5 bg-blue">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<img src="asset/img/logo-triple-i-w.png" class="w-25 mb-4" alt="logo triple i">
+				<h3 class="txt-org">The right solution, The right partner.</h3>
+			</div>
+			<div class="col-lg-6">
+				<div class="row">
+					<div class="col-lg-6 text-white">
+						<h5>Location</h5>
+						<div class="d-flex align-items-start">
+							<i class="bi bi-geo-alt-fill me-2 "></i>
+							<p>628 Triple i Building, 6th Floor,
+							Soi Klab Chom, Nonsee Road,
+							Chongnonsee, Yannawa, Bangkok 10120</p>
+						</div>
+					</div>
+					<div class="col-lg-6 text-white">
+						<h5>Contact Us</h5>
+						<div class="d-flex align-items-start">
+							<i class="bi bi-envelope-fill me-2"></i>
+							<p>info@iii-supplychain.com.com</p>
+						</div>
+						<div class="d-flex align-items-start">
+							<i class="bi bi-telephone-fill me-2"></i>
+							<p>Tel: +66 2681-3722-5</p>
+						</div>
+						<div class="d-flex align-items-start">
+							<img class="me-1 icon-fax" src="asset/img/icons/fa_fax.svg">
+							<p>Fax: +66 2681-3110</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade " id="iFulfillment" tabindex="-1" aria-labelledby="iFulfillmentModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-between">
+      	<div class="d-flex align-items-center">
+      		<img  class="w-25"  src="asset/img/i-fulfillment-Logo-Guideline-1.png" alt="i-fulfillment-Logo">
+       		<!-- <h3 class="modal-title txt-blue ms-3" id="exampleModalLabel">iFulfillment</h3> -->
+      	</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="font-w-800">iFulfillment </p>
+        <p class="indent-30">e-Commerce and e-Fulfillment is one of the fastest growing trade channels in the latest disruptive environment.  With its drastically increasing tendency, Triple i SupplyChain Co., Ltd. aims at being the logistics back-end operations serving the omni-channel market accessibility whether our customers market their products via Facebook, Instragram, LINE, YouTube, Multi-level marketing (MLM), direct sales, web sites, mobile applications and any other e-based platforms. Our internal IT enabler allows our customers to integrate all types of supply chain activities to any third-party logistics providers with genuine visibility of all shipment deliveries at their  fingertips.     </p>
+        <p class="font-w-800">iFulfillment SOLUTION </p>
+        <ul>
+        	<li>
+        		e-Commerce and e-Fulfillment Solution 
+        	</li>
+        	<li>
+        		4PL Provider for integrated Supply Chain Management 
+        	</li>
+        	<li>
+        		Bar-code based IT system 
+        	</li>
+        	<li>
+        		Storage and Inventory Management 
+        	</li>
+        	<li>
+        		Order Processing 
+        	</li>
+
+        	<li>
+        		Picking and Packing 
+        	</li>
+        	<li>
+        		Dispatching and Shipping 
+        	</li>
+        	<li>
+        		Cash-on-Delivery (COD) Services 
+        	</li>
+        	<li>
+        		Backward and Forward Electronic Data Interface (EDI)
+        	</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade " id="iDelivery" tabindex="-1" aria-labelledby="iDeliveryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-between">
+      	<div class="d-flex align-items-center">
+      		<img  src="asset/img/i-delivery-Logo-Guideline-1.png"  class="w-25" alt="i-delivery-Logo">
+       		<!-- <h3 class="modal-title txt-blue ms-3" id="exampleModalLabel">iDelivery</h3> -->
+      	</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="font-w-800">iDelivery  </p>
+        <p class="indent-30">
+		In addition to warehouse and inventory operations, distribution and transportation management is a driven key success factor to logistics and supply chain management.  Triple i SupplyChain Co., Ltd. has a comprehensive contract to a large fleet of multi types of trucks for integrated distribution and transport management (first-mile, long haul and last-mile deliveries).  The urgency of deliveries depends much on our customer’s requirements whether it is same day within Bangkok and outskirt areas or the next day deliveries for upcountry provinces.  The customized service with clear-cut lead time for both Proof-of-Delivery (POD) with or without Cash-on-Delivery (COD) requirements can be provided to the best of our customer’s satisfaction. Whether the deliveries to the end customers are based on B-2-B or B-2-C, our dynamic team of distribution and transport is ready to serve our customer’s specific needs.  In addition, the reverse logistics or returned deliveries can also be provided upon request.   </p>
+        <p class="font-w-800"> iDelivery SOLUTION</p>
+        <ul>
+        	<li>
+        		Bangkok and Nationwide On-time Delivery 
+        	</li>
+        	<li>
+        		Same-day and Next-day Delivery Services 
+        	</li>
+        	<li>
+        		Dedicated Fleet and Consolidation
+        	</li>
+        	<li>
+        		 Proof-of-Delivery (POD) Management
+        	</li>
+        	<li>
+        		Cash-on-Delivery (COD) Services 
+        	</li>
+
+        	<li>
+        		Large Selection of Fleet Vehicles 
+        	</li>
+        	<li>
+        		Multi-Channels Delivery B-2-B and B-2-C Coverage     
+        	</li>
+        	<li>
+        		Home, Office, Company, Site, Outlet      
+        	</li>
+        	<li>
+        		Store, Branch, Department Store, Hypermarket      
+        	</li>
+        	<li>
+        		Shopping Mall, Community Mall, Plaza  
+        	</li>
+        	<li>
+        		Modern Trade, Category Killer, Supermarket      
+        	</li>
+        	<li>
+        		Warehouse, Distribution and Logistics Center 
+        	</li>
+        	<li>
+        		Returned goods and reverse logistics
+        	</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade " id="iProject" tabindex="-1" aria-labelledby="iProjectModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-between">
+      	<div class="d-flex align-items-center">
+      		<img  src="asset/img/i-project-Logo-Guideline-1.png"  class="w-25" alt="i-project-Logo">
+       		<!-- <h3 class="modal-title txt-blue ms-3" id="exampleModalLabel">iProject</h3> -->
+      	</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="font-w-800">iProject Sophisticated Warehouse Management System (WMS)   </p>
+        <p class="indent-30">
+		The continuous improvement of our advanced warehouse management system (WMS) allows Triple i SupplyChain Co., Ltd. to stay at the forefront of leading integrated contract logistics provider.  Our WMS is truly a bar-code-based system operating by handheld and bar code readers.  It also can generate any required types of customer’s reports to monitor all types of warehouse and inventory management operations and Key Performance Indicators (KPIs).      The WMS also has the features of web-based reports which allow our valuable customers to track and trace the warehousing and inventory management activities on the real-time basis.  This enables our customers to have 7 days/24 hours visibility and ensure that their logistics needs always fulfil their end-consumers on the right solution.   </p>
+        <p class="font-w-800">FULLY RICH AND INTEGRATED WMS: SIMILAN </p>
+        <ul>
+        	<li>
+        		Multiple Warehouses/Locations/Clients Support  
+        	</li>
+        	<li>
+        		Multiple SKUs/Pack sizes Control with Photos 
+        	</li>
+        	<li>
+        		Full Functions of Warehouse Activities   (Receiving/Put-away/Picking/Packing/Dispatching) 
+        	</li>
+        	<li>
+        		 Full pallet/Carton/Case/Bin/Piece/Serial Control 
+        	</li>
+        	<li>
+        		Pallet-to-Pickface replenishment features 
+        	</li>
+
+        	<li>
+        		Operated by Wireless Access Points with Handheld Devices 
+        	</li>
+        	<li>
+        		Multi-Channels Delivery B-2-B and B-2-C Coverage     
+        	</li>
+        	<li>
+        		Barcode, QR Code based Labels and Documents  
+        	</li>
+        	<li>
+        		Built-in Interface/Electronic Data Interface (EDI) with any ERP systems      
+        	</li>
+        	<li>
+        		Customizable Operational & Performance Report 
+        	</li>
+        	<li>
+        		Web-based Report for 7 days/24 hours Visibility     
+        	</li>
+        	<li>
+        		Customizable Features for Customer’s Requirements
+        	</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade " id="iCommerce" tabindex="-1" aria-labelledby="iCommerceModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-between">
+      	<div class="d-flex align-items-center">
+      		<img  src="asset/img/i-Commerce-Logo-Guideline-1.png" class="w-25" alt="i-Commerce-Logo">
+       		<!-- <h3 class="modal-title txt-blue ms-3" id="exampleModalLabel">iCommerce</h3> -->
+      	</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="font-w-800">icommerce Warehouse and Inventory Management</p>
+        <p class="indent-30">
+		Strategically located on Bangna KM19, a warehouse of Triple i SupplyChain Company Limited serves as the one-stop logistics and distribution center for most of leading customers throughout their e-commerce supply chain management.  Established with international standard of raised floor, selective racks, bin and pick-face control to accommodate ambient and air-conditioned or temperature-controlled high clear height storage and handling, the logistics process can be redesigned to facilitate our customer’s efficient logistics operations. Triple i SupplyChain Co., Ltd. has several material handling equipment to accommodate the operations of multi-purpose logistics activities such as electric forklifts, handlifts, picking and packing conveyors and mobile carts, etc. In addition, the best-in-class warehouse management system (WMS) has also been implemented and continuously improved to assure that any logistics requirements of our valuable customers can be tailormade to serve their e-commerce solution in a timely and efficient manner.</p>
+        <p class="font-w-800">OUR WAREHOUSE AND INVENTORY MANAGEMENT SERVICES</p>
+        <ul>
+        	<li>
+        		Rack, Bin, Pick-face Storage Management 
+        	</li>
+        	<li>
+        		Ambient and Air-conditioned Storage 
+        	</li>
+        	<li>
+        		 Palletized, Carton/Case, Piece based Picking 
+        	</li>
+        	<li>
+        		 Sophisticated Bar-code based WMS operated by Wireless Handhelds 
+        	</li>
+        	<li>
+        		Value Added Services:     
+        	</li>
+        	<li>
+        		Pick & Pack with installed Conveyor     
+        	</li>
+        	<li>
+        		Kitting of Promotional Set     
+        	</li>
+        	<li>
+        		Labelling and Re-labelling • Returned Goods and Reverse Logistics Management 
+        	</li>
+        	<li>
+        		Sophisticated barcode-based WMS           
+        	</li>
+        	<li>
+        		Location Management      
+        	</li>
+        	<li>
+        		Pallet/Bin Management     
+        	</li>
+        	<li>
+        		Replenishment to Pick-face     
+        	</li>
+        	<li>
+        		Packaging Management and Control
+        	</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+	$.support.cors = true;
+</script>
+
+
+<script src="./asset/js/jquery-3.6.0.min.js"></script>
+<script src="./asset/js/jquery.MultiLanguage.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
