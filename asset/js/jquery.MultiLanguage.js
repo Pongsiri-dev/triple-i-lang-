@@ -33,7 +33,7 @@ function getLanguage() {
             (index === 'head') ? $(document).attr("title", val['title']) : false;
             $(index).children().each(function () {
                 $(this).text(val[$(this).attr('key')])
-                console.log("log >> "+$(this).text(val[$(this).attr('key')]));
+                console.log("log >> "+val[$(this).attr('key')]);
             })
         })
     })
