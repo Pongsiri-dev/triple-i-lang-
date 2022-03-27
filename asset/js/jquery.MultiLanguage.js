@@ -29,6 +29,10 @@ function getLanguage() {
         // add selected language class to the body tag
         $('body').attr('class', language);
         // Loop through message in data
+
+        console.log(lang);
+        console.log([lang]);
+
         $.each(lang, function (index, val) {
             (index === 'head') ? $(document).attr("title", val['title']) : false;
             $(index).children().each(function () {
