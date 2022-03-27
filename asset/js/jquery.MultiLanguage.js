@@ -18,8 +18,8 @@ function getLanguage() {
     (language == null) ? setLanguage(default_lang) : false;
     // Load data of selected language
     $.ajax({
-        // url: '/asset/locales/' + language + '.json',
-        url: 'http://localhost:8000/' + language + '.json',
+        url: '/asset/locales/' + language + '.json',
+        // url: 'http://localhost:8000/' + language + '.json',
         type: 'GET',
         dataType: 'json',
         contentType: 'application/json',
